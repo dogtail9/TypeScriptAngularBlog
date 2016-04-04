@@ -234,3 +234,8 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# TypeScript
+**/Source/app/**/*.js
+**/Source/app/**/*.map
+**/Source/typings
