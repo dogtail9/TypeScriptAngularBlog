@@ -14,7 +14,6 @@ import { MarkdownComponent } from '../../components/markdown/markdown.component'
 export class PostComponent implements OnInit {
     @Input() post: Post;
 
-
     constructor(
         private _postService: PostService,
         private _routeParams: RouteParams) {

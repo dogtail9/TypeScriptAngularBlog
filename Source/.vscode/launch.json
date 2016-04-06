@@ -18,11 +18,23 @@
 			"sourceMaps": true,
 			"outDir": null
 		},
+		 {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        },
 		{
 			"name": "Attach",
 			"type": "node",
 			"request": "attach",
-			"port": 5858
+			"port": 5858,
+			"sourceMaps": true,
+			"outDir": null,
+			"localRoot": "${workspaceRoot}",
+			"remoteRoot": null
 		}
 	]
 }
