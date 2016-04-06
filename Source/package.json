@@ -2,10 +2,11 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite:c\" ",    
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
+    "lite:c": "lite-server --open chrome",
     "typings": "typings",
     "postinstall": "typings install" 
   },
