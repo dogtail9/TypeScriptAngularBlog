@@ -10,6 +10,29 @@
 // Compiles a HelloWorld.ts program
 {
 	"version": "0.1.0",
+	"command": "cmd",
+	"isShellCommand": true,
+	"tasks": [
+		{
+			"taskName": "Start watch and lite-server",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"args": [
+				"/C", "npm", "start"
+			],
+			"problemMatcher": "$tsc" 
+		},
+		{
+			"taskName": "tsc",
+			"suppressTaskName": true,
+			"args": [
+				"/C", "tsc"
+			]
+		}
+	]
+}
+/*{
+	"version": "0.1.0",
 	"command":"npm",
 	"isBuildCommand":true,
 	"isShellCommand": true,
@@ -18,6 +41,7 @@
 	],
 	"problemMatcher": "$tsc"
 }
+*/
 /*
 {
 	"version": "0.1.0",
